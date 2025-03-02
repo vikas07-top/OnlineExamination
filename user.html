@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Online Examination</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Dashboard</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="dashboard">
+                <h2>Welcome, <span id="username-display">[User]</span>!</h2>
+                <div class="user-options">
+                    <button onclick="openSection('start-exam')">Start Exam</button>
+                    <button onclick="openSection('view-results')">View Results</button>
+                    <button onclick="openSection('edit-profile')">Edit Profile</button>
+                </div>
+                <div id="user-content"></div>
+            </section>
+        </main>
+        <div class="abcd">
+        <footer>
+            <p>&copy; 2024 Online Examination System</p>
+        </footer>
+        </div>
+    </div>
+    <script src="user.js"></script>
+    <script src="data.js"></script>
+
+</body>
+</html>
+
