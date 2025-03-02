@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Online Examination</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="help.html">Help</a></li>
+              
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="dashboard">
+                <h2>Welcome, Admin!</h2>
+                <div class="admin-options">
+                    <button onclick="openSection('manage-users')">Manage Users</button>
+                    <button onclick="openSection('manage-exams')">Manage Exams</button>
+                    <button onclick="openSection('view-results')">View Results</button>
+                </div>
+                <div id="admin-content"></div>
+            </section>
+        </main>
+        <div class="abc">
+        <footer>
+            <p>&copy; 2024 Online Examination System</p>
+        </footer>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+    <script src="data.js"></script>
+
+</body>
+</html>
